@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BotonFlotanteRedes</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<style>
+		.despPoOtCos{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			display: none;
+			z-index: 999;
+		}
+		.coteBtnFloRedeSH{
+			position: fixed;
+			bottom: 15px;
+			right: 25px;
+			z-index: 999;
+		}
+		.coteBtnFloRedeSH a{
+			color: white;
+		}
+		.flReDesBtn,.flReDes{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 8px;
+			color: white;
+			cursor: pointer;
+		}
+		.flReDes{
+			width: 45px;
+			height: 45px;
+			position: relative;
+			right: -120px;
+		}
+		.btnFloRedeSH{	
+			background: salmon;
+			font-size: 1.8rem;
+		}
+		#cBoxFloRed{
+			display: none;
+		}
+		#coteflReDes{
+			transition: 0.5s ease;
+		}
+		#coteflReDes div{
+			box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+			font-size: 1.3rem;
+			padding-top: 1px;
+		}
+		#cBoxFloRed:checked ~* .flReDes1{	
+			right: 0;
+		}
+		#cBoxFloRed:checked ~* .flReDes2{	
+			right: 0;
+		}
+		#cBoxFloRed:checked ~* .flReDes3{	
+			right: 0;
+		}
+		#cBoxFloRed:checked ~* .despPoOtCos{
+			display: block;
+		}
+		.flReDes:hover{
+			transform: scale(1.1);
+		}
+		.flReDes1{
+			background: #0cdc75;
+			transition: 0.5s ease;
+		}
+		.flReDes2{
+			background:#4267b2;
+			transition: 0.7s ease;
+		}
+		.flReDes3{
+			background: #10c8f5;
+			transition: 0.9s ease;
+		}
+	</style>
+	<section>
+	<input type="checkbox" id="cBoxFloRed">
+		<label for="cBoxFloRed">
+			<div class="despPoOtCos"></div>
+		</label>
+	<div class="coteBtnFloRedeSH">
+		
+		
+		
+		<div id="coteflReDes">
+			<div class="flReDes1 flReDes">
+				<a target="_blank" href="https://wa.me/51986116200?text=Me%20gustaría%20información%20de">
+					<i class="fa fa-whatsapp"></i>
+				</a>
+			</div>
+			<div class="flReDes2 flReDes">
+				<i class="fa fa-facebook "></i>
+			</div>
+			<div class="flReDes3 flReDes">
+				<i class="fa fa-twitter"></i>
+			</div>
+		</div>
+		<label for="cBoxFloRed">
+			<div class="btnFloRedeSH flReDesBtn">
+				<i class="fa fa-comments"></i>
+			</div>
+		</label>
+
+		
+	</div>
+</section>
+	
+</body>
+</html>
